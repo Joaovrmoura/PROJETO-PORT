@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="light"></div>
+<div class="header">
+    <div class="rotating-text">
+        <h1>
+            <span class="word w-1">Hello</span>
+            <span class="word w-2">Backend</span>
+            <span class="word w-3">Web Developer</span>
+            <span class="word w-4">Welcome</span>
+        </h1>
+    </div>
+    
+    <div class="sub-header">
+        <p>Senior Frontend Engineer</p>
+        <p class="sub">I build pixel-perfect, engaging, and accessible digital experiences.</p>
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="#about">About<span class="sticker"></span></a></li>
+            <li><a href="#education">Experience<span class="sticker"></span></a></li>
+            <li><a href="#projects">Projects<span class="sticker"></span></a></li>
+            <li><a href="#contact">Contato<span class="sticker"></span></a></li>
+        </ul>
+    </nav>
+    
+    <div class="menu-icons">
+        <ion-icon name="logo-github"  class="i"></ion-icon>
+        <ion-icon name="logo-linkedin"  class="i"></ion-icon>
+        <ion-icon name="logo-behance"  class="i"></ion-icon>
+        <ion-icon name="logo-whatsapp"  class="i"></ion-icon>
+        <ion-icon name="sunny-outline" class="i" id="i" onclick="trocarTema()"></ion-icon>
+  
+    </div>
+</div>
+
+   <section class="about" id="about">
+
+    <div class="about-content">
+        <div class="container-text">
+            <p>Olá! Meu nome é<span class="style"> João victor</span>, sou um desenvolvedor 
+            apaixonado por criar soluções inovadoras e eficientes para os desafios do mundo
+            digital. Com experiência em <span class="style">PHP e MySQL</span>,
+            tenho trabalhado nos bastidores para tornar 
+            realidade os projetos mais ambiciosos.
+            </p>
+            
+            <p>
+            Atualmente, estou <span class="style">cursando Análise e Desenvolvimento de Sistemas     
+            </span>, na instituição Faeterj, onde continuo a aprimorar minhas habilidades e conhecimentos técnicos. Além 
+            disso, tenho me dedicado ao <span class="style">estudo de linguagens como 
+            Python e Java,</span> expandindo assim meu repertório e possibilitando abordagens 
+            mais versáteis para resolver problemas complexos.
+            </p>
+            
+            <p>
+            <span class="style">Com frameworks, </span>tenho conhecimento e alguns projetos 
+            em <span class="style">Laravel e React</span>, Estou em processo de aprendizado em
+            Flask e Angular. Explore um pouco mais da minha página e saiba mais sobre projetos e
+            conhecimento.
+            <a href="">Ver Currículo <ion-icon name="trending-up-outline"class="i"></ion-icon></a>
+            </p>
+           
+</div>
+</div>
+</section>
+
+
+<section id="education">
+    <p class="section__text__p1">Ferramentas</p>
+<h1 class="title">Conhecimento e Skills</h1>
+    <div class="education">
+        <div class="educ-content">
+            <div class="box-educ1">
+                <span class="date"><ion-icon name="code-slash-outline" class="i" id="color-changing-element-2"></ion-icon></span>
+                <div class="box">
+                    <h2>Front-end Ferramentas</h2>
+                    <h2 class="sub-educ">Front-end tecnologias</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, labore.</p>
+                    <div class="btn-educ">
+                        <a href="" class="btn"><i class="fab fa-bootstrap"></i>Bootstrap</a>
+                    </div>
+                    <div class="btn-educ">
+                        <a href="" class="btn"><i class="fab fa-html5"></i>Html</a>
+                    </div>
+                    <div class="btn-educ">
+                        <a href="" class="btn"><i class="fab fa-css3-alt">css</i></a>
+                    </div>
+                    <div class="btn-educ">
+                        <a href="" class="btn"><i class="fab fa-wordpress">Wordpress</i></a>
+                    </div>
+                    <div class="btn-educ">
+                        <a href="" class="btn"><i class="fab fa-sass">SASS</i></a>
+                    </div>
+                </div>     
+            </div>
+            <div class="box-educ1">
+                <span class="date"><ion-icon name="server-outline" class="i" id="color-changing-element-3"></ion-icon>
+                <div class="box">
+                    <h2>Backend ferramentas Dev</h2>
+                    <h2 class="sub-educ">Backend tecnologies</h2>
+                    <p>habilidades intermediárias em PHP, MySQL, e Laravel, </p>
+                    <div class="btn-educ">
+                        <a href="" class="btn"><i class="fab fa-python"></i>Python</a>
+                    </div>
+                    <div class="btn-educ">
+                        <a href="" class="btn"><i class="fab fa-php"></i>PHP</a>
+                    </div>
+                    <div class="btn-educ">
+                        <a href="" class="btn"><i class="fas fa-database"></i>mySQl</a>
+                    </div>
+                    <div class="btn-educ">
+                        <a href="" class="btn"> <i class="fab fa-laravel"></i>Laravel</a>
+                    </div>
+                </div>     
+            </div>
+            <div class="box-educ1">
+                <span class="date"><ion-icon name="person-outline" class="i" id="color-changing-element-1"></ion-icon></span>
+                <div class="box">
+                    <h2>Cursos e formação</h2>
+                    <h2 class="sub-educ">Certificados e bootcamps</h2>
+                    <p>PHP mySQLi: Desenvolvedor de sistemas senac Rj</p>
+                    <div class="btn-educ">
+                        <a href="" class="btn">Download CV</a>
+                    </div>
+                    <div class="btn-educ">
+                        <a href="" class="btn">Certificados</a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="projects">
+<div class="projects">
+    <p class="section__text__p1">Explore</p>
+    <h1 class="title">Meus Projetos</h1>
+    <div class="container-proje">   
+        <img src="./images/sad.jpg" alt="">
+        <div class="container">
+        <h2>Spotfy Profile</h2>
+        <h3>Ouça suas musicas em um ambiente personalizado</h3>
+        <p><span class="proje-title">ola mundo</span>
+            Porjeto desenvolvido em Tailwindcss, React e NodeJs
+        </p>
+    </div>
+    <div class="proje-content">
+        <span class="date"><i class="fa fa-eye" id="color-changing-element-2"></i></span>
+    </div>
+</div>
+</div>
+<div class="btn-educ">
+    <a href="" class="btn"><i class="fab fa-php"></i></a>
+</div>
+<div class="btn-educ">
+    <a href="" class="btn"><i class="fab fa-python"></i></a>
+</div>
+<div class="btn-educ">
+    <a href="" class="btn"><i class="fab fa-python"></i></a>
+</div>
+
+</section>
+
+
+
+
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+  
+  </section>
+
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
