@@ -325,7 +325,7 @@ nav{
         margin: 50px;
         display: flex;
         width: 50%;
-        height: 42vh;
+        height: 52vh;
         width: 90%;
         overflow: hidden;
     } 
@@ -384,24 +384,17 @@ nav{
     }
    .header{
         width: 78%;
-        height: 40vh;
-        margin-bottom: -50px;
+        margin-bottom: -10px;
    } 
     .sub-header p {
         font-size: 16px;
         margin: 5px 0px 5px;
         color: var(--color-p-light);
    }
-
     .sub-header .sub {
         font-size: 14px;
         width: 300px;
         color: var(--text-color-p);
-    }
-
-    .header h1 {
-        font-size: 45px;
-        font-weight: 800;
     }
     .container-proje img {
         width: 150px;
@@ -420,7 +413,12 @@ nav{
         width: 50px;
     }
 }
-
+@media only screen and (max-width: 774px){
+    .header h1 {
+        font-size: 50px;
+        font-weight: 800;
+    }
+}
 @media only screen and (max-width: 491px) {
     section {
         height: 88vh;
@@ -448,12 +446,11 @@ nav{
     }
     .header{
         margin: 0px 30px;
-        width: 72%;
-        height: 40vh;
+        width: 90%;
         margin-bottom: -50px;
    } 
     .header h1 {
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 800;
     }
 }
