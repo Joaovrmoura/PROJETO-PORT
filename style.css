@@ -314,17 +314,21 @@ nav{
 }
 
 
-@media(max-width: 1115px) {
+@media only screen and (max-width: 1115px) {
+    section {
+        margin-left: 20px;
+        width: calc(100% - 110px); /* Ajusta a largura da seção */
+        height: 53vh;
+    }
     .header {
         position: relative;
-        margin: 50px;
+        margin: 50px auto; /* Centraliza a header */
         display: flex;
-        width: 50%;
+        width: 90%; /* Reduz a largura da header */
         height: 52vh;
-        width: 90%;
         overflow: hidden;
     } 
-    nav{
+    nav {
         display: none;
     }
     .header h1 {
@@ -332,14 +336,12 @@ nav{
         font-size: 70px;
         font-weight: 800;
     }
-    
     .sub-header {
         font-size: 20px;
         margin-top: 100px;
         color: #d5d6d8;
     }
-       
-    .menu-icons{
+    .menu-icons {
         position: absolute;
         margin-top: 220px;
     }
@@ -348,7 +350,6 @@ nav{
         width: 100%;
         margin-left: 0;
         gap: 20px;
-
     }
     .box p {
         width: 70%;
@@ -374,18 +375,18 @@ nav{
 @media only screen and (max-width: 774px) {
     section {
         height: 74vh;
-        margin-left: 3%; /* Ajusta a margem esquerda */
+        margin: 0 auto; /* Centraliza a section */
         width: 94%; /* Ajusta a largura da seção */
     }
-   .header{
-        width: 78%;
+    .header {
+        width: 78%; /* Reduz a largura da header */
         margin-bottom: -10px;
-   } 
+    } 
     .sub-header p {
         font-size: 16px;
-        margin: 5px 0px 5px;
+        margin: 5px 0;
         color: var(--color-p-light);
-   }
+    }
     .sub-header .sub {
         font-size: 14px;
         width: 300px;
@@ -408,27 +409,22 @@ nav{
         width: 50px;
     }
 }
-@media only screen and (max-width: 774px){
-    .header h1 {
-        font-size: 50px;
-        font-weight: 800;
-    }
-}
+
 @media only screen and (max-width: 491px) {
     section {
         height: 88vh;
-        margin-left: 2%; /* Ajusta a margem esquerda */
+        margin: 0 auto; /* Centraliza a section */
         width: 94%; /* Ajusta a largura da seção */
     }
     .box-educ1,
     .box-educ1 .box {
         width: 100%;
         margin-left: 0;
-        margin: 30px 0px;
+        margin: 30px 0;
     }
-    .box-educ1{
+    .box-educ1 {
         height: 220px;
-        width:80%;
+        width: 80%;
         padding: 1px;
         transition: all 0.3s;
     }
@@ -439,25 +435,24 @@ nav{
         font-size: 1.70rem;
         margin-bottom: 1px;
     }
-    .header{
-        margin: 0px 30px;
-        width: 90%;
+    .header {
+        margin: 0 auto; /* Centraliza a header */
+        width: 90%; /* Reduz a largura da header */
         margin-bottom: -50px;
-   } 
+    } 
     .header h1 {
         font-size: 40px;
         font-weight: 800;
     }
 }
 
-@media only screen and (max-width: 426px){
+@media only screen and (max-width: 426px) {
     section {
         height: 100vh;
-        margin-left: 2%; /* Ajusta a margem esquerda */
+        margin: 0 auto; /* Centraliza a section */
         width: 94%; /* Ajusta a largura da seção */
     }
-    #about 
-    .about-content{
+    #about .about-content {
         width: 100%;
     } 
     .container-proje {
@@ -466,40 +461,35 @@ nav{
         align-items: center;
         margin-top: 20px;
     }
-
     .container-proje img {
         width: 100%;
         height: auto;
         border-radius: 13px;
         filter: grayscale(100%);
     }
-
     .container {
         margin-top: 10px;
         text-align: center;
     }
-
     .container h2,
     h3 {
         margin: 5px 0;
         font-size: 13px;
     }
-
     .container p {
         font-size: 10px;
         margin: 5px 0;
         text-align: center;
     }
-
     .proje-content {
         display: none;
     }
-
     .btn-educ {
         margin-top: 10px;
         text-align: center;
     }
 }
+
 #projects,
 .projects{
     margin-top: 220px;
