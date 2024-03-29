@@ -315,11 +315,6 @@ nav{
 
 
 @media(max-width: 1115px) {
-    section {
-        margin-left: 20px;
-        width: calc(100% - 110px); /* Ajusta a largura da seção */
-        height: 53vh;
-    }
     .header {
         position: relative;
         margin: 50px;
@@ -455,7 +450,7 @@ nav{
     }
 }
 
-@media only screen and (max-width: 395px){
+@media only screen and (max-width: 426px){
     section {
         height: 100vh;
         margin-left: 2%; /* Ajusta a margem esquerda */
