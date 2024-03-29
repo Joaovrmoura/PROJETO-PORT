@@ -328,7 +328,6 @@ nav{
         height: 42vh;
         width: 90%;
         overflow: hidden;
-        background-color: red;
     } 
     nav{
         display: none;
@@ -423,15 +422,11 @@ nav{
     }
 }
 
-@media only screen and (max-width: 492px) {
+@media only screen and (max-width: 491px) {
     section {
-        height: 85vh;
+        height: 88vh;
         margin-left: 2%; /* Ajusta a margem esquerda */
         width: 94%; /* Ajusta a largura da seção */
-    }
-    .header h1 {
-        font-size: 45px;
-        font-weight: 800;
     }
     .box-educ1,
     .box-educ1 .box {
@@ -439,18 +434,20 @@ nav{
         margin-left: 0;
         margin: 30px 0px;
     }
+    .box-educ1{
+        height: 220px;
+        width:80%;
+        padding: 1px;
+        transition: all 0.3s;
+    }
 }
 
-@media only screen and (max-width: 430px) {
-    section {
-        height: 88vh;
-        margin-left: 2%; /* Ajusta a margem esquerda */
-        width: 94%; /* Ajusta a largura da seção */
-    }
+@media only screen and (max-width: 445px) {
+    
  
     .title {
         font-size: 1.70rem;
-        margin-bottom: 10px;
+        margin-bottom: 1px;
     }
     .header{
         margin: 0px 30px;
@@ -461,6 +458,56 @@ nav{
     .header h1 {
         font-size: 30px;
         font-weight: 800;
+    }
+}
+@media only screen and (max-width: 395px){
+    section {
+        height: 100vh;
+        margin-left: 2%; /* Ajusta a margem esquerda */
+        width: 94%; /* Ajusta a largura da seção */
+    }
+    #about 
+    .about-content{
+        width: 100%;
+} 
+    .container-proje {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .container-proje img {
+        width: 100%;
+        height: auto;
+        border-radius: 13px;
+        filter: grayscale(100%);
+    }
+
+    .container {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .container h2,
+    h3 {
+        margin: 5px 0;
+        font-size: 13px;
+    }
+
+    .container p {
+        font-size: 10px;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .proje-content {
+        display: none;
+    }
+
+    .btn-educ {
+        margin-top: 10px;
+        text-align: center;
     }
 }
 
