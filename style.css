@@ -369,7 +369,6 @@ nav{
       display: none;
     }
     .btn-educ .btn {
-     
         padding: 5px 15px;
         margin-top: 12px;
         border-radius: 15px;
@@ -377,7 +376,7 @@ nav{
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 774px) {
     section {
         height: 74vh;
         margin-left: 3%; /* Ajusta a margem esquerda */
@@ -443,8 +442,6 @@ nav{
 }
 
 @media only screen and (max-width: 445px) {
-    
- 
     .title {
         font-size: 1.70rem;
         margin-bottom: 1px;
@@ -460,6 +457,7 @@ nav{
         font-weight: 800;
     }
 }
+
 @media only screen and (max-width: 395px){
     section {
         height: 100vh;
@@ -469,7 +467,7 @@ nav{
     #about 
     .about-content{
         width: 100%;
-} 
+    } 
     .container-proje {
         display: flex;
         flex-direction: column;
@@ -510,8 +508,6 @@ nav{
         text-align: center;
     }
 }
-
-
 #projects,
 .projects{
     margin-top: 220px;
