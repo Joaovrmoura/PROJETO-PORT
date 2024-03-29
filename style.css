@@ -326,8 +326,9 @@ nav{
         display: flex;
         width: 50%;
         height: 42vh;
-        width: 100%;
+        width: 90%;
         overflow: hidden;
+        background-color: red;
     } 
     nav{
         display: none;
@@ -369,6 +370,7 @@ nav{
       display: none;
     }
     .btn-educ .btn {
+     
         padding: 5px 15px;
         margin-top: 12px;
         border-radius: 15px;
@@ -382,7 +384,23 @@ nav{
         margin-left: 3%; /* Ajusta a margem esquerda */
         width: 94%; /* Ajusta a largura da seção */
     }
-   
+   .header{
+        width: 78%;
+        height: 40vh;
+        margin-bottom: -50px;
+   } 
+    .sub-header p {
+        font-size: 16px;
+        margin: 5px 0px 5px;
+        color: var(--color-p-light);
+   }
+
+    .sub-header .sub {
+        font-size: 14px;
+        width: 300px;
+        color: var(--text-color-p);
+    }
+
     .header h1 {
         font-size: 45px;
         font-weight: 800;
@@ -428,6 +446,21 @@ nav{
         height: 88vh;
         margin-left: 2%; /* Ajusta a margem esquerda */
         width: 94%; /* Ajusta a largura da seção */
+    }
+ 
+    .title {
+        font-size: 1.70rem;
+        margin-bottom: 10px;
+    }
+    .header{
+        margin: 0px 30px;
+        width: 72%;
+        height: 40vh;
+        margin-bottom: -50px;
+   } 
+    .header h1 {
+        font-size: 30px;
+        font-weight: 800;
     }
 }
 
