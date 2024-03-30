@@ -11,8 +11,8 @@
     --color-p-light: #eeecec;
     --span-color: rgb(255, 255, 255);
 
-    --btn-color:rgb(94 234 212);
-    --background-btn:rgba(19, 78, 74, 0.815) ;
+    --btn-color:#8ec3b8;
+    --background-btn:#777da663 ;
     --text-color-p:#99a3b8;
     --third-color: #d5d6d8;
     --first-shadow-color:  #0000001a;
@@ -47,11 +47,11 @@ section{
 }
 
 .section__text__p1 {
-    color: var(--color-p);
+    color: var(--color-p-light);
 }
 .title {
     font-size: 2rem;
-    color: #bdbebe;
+    color: var(--color-p);
     margin-bottom: 30px;
 }
 .theme-dark {
@@ -340,14 +340,17 @@ nav{
 .box-educ1:not(:last-child) {
     margin-bottom: 20px;
 }
+
+body {
+   overflow-x: hidden;
+}
 @media only screen and (max-width: 1117px) {
-    body, section {
-        overflow-x: hidden; /* Impede que o conteúdo vaze horizontalmente */
-    }
+
+
     section {
         width: calc(100% - 110px); /* Ajusta a largura da seção */
         height: auto;
-        margin: 30px ; 
+        margin: 100px 25px 0px; 
     }
     .header {
         position: relative;
@@ -377,7 +380,7 @@ nav{
     }
     .box-educ1,
     .box-educ1 .box {
-        width: 100%;
+        width: 90%;
         height: auto;
         margin-left: 0;
      
@@ -461,14 +464,12 @@ nav{
         width: 90%;
     }
 }
+
 @media only screen and (max-width: 310px){
     .header h1 {
-        font-size: 35px;
+        font-size: 33px;
     }
-    .header{
-        width: 100%;
-        margin-left: 10px;
-    }
+
     .sub-header p {
         font-size: 14px;
     }
@@ -492,23 +493,22 @@ nav{
 
 .project-filter{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 20px;
 }
 .project-filter li{
     margin: 5px;
-    padding: 5px 20px;
-    color: var(--color-p);
+    padding: 5px 10px;
+    color: var(--btn-color);
     font-size: 1rem;
     font-weight: 400;
     cursor: pointer;
     list-style: none;
 }
 .project-filter-active{
-    background-color: var(--text-color-p);
-    color: var(--color-p-light);
+    border: solid 1px var(--background-btn);
 }
 
 .project-container{
@@ -520,9 +520,8 @@ nav{
     margin: auto;
 }
 .project-box{
-    width: 250px;
+    width: 200px;
     padding: 10px;
-    border: solid 1px var(--first-shadow-color);
     margin: 10px;
 }
 .project-box img{

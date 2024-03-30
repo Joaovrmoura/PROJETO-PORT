@@ -163,26 +163,29 @@ var colors = [
     "rgb(94 234 212)"
 ];
 
-// Função para gerar uma cor aleatória RGB
 function randomColor() {
     return colors[Math.floor(Math.random() * colors.length)];
 }
 
-// Função para atualizar a cor do elemento
 function changeColor(elementId) {
     var element = document.getElementById(elementId);
     element.style.color = randomColor();
 }
-
-// Lista de IDs dos elementos que terão a cor alterada
 var elementIds = ["color-changing-element-1", "color-changing-element-2", "color-changing-element-3"];
 
-// Atualiza a cor inicialmente para cada elemento
 elementIds.forEach(function(elementId) {
     changeColor(elementId);
 });
 
+function updateColors() {
+    elementIds.forEach(function(elementId) {
+        changeColor(elementId);
+    });
+}
 
+updateColors();
+
+setInterval(updateColors, 2000);
 
 
 
