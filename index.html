@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/OIP.jpeg">
     <title>Document</title>
 </head>
 <body>
@@ -14,10 +15,10 @@
 <div class="header">
     <div class="rotating-text">
         <h1>
-            <span class="word w-1">Hello</span>
-            <span class="word w-2">Backend</span>
+            <span class="word w-1">web developer</span>
+            <span class="word w-2">web delveloper</span>
             <span class="word w-3">Web Developer</span>
-            <span class="word w-4">Welcome</span>
+            <span class="word w-4">Web developer</span>
         </h1>
     </div>
     
@@ -29,7 +30,7 @@
         <ul>
             <li><a href="#about">About<span class="sticker"></span></a></li>
             <li><a href="#education">Experience<span class="sticker"></span></a></li>
-            <li><a href="#projects">Projects<span class="sticker"></span></a></li>
+            <li><a href="#project">Project<span class="sticker"></span></a></li>
             <li><a href="#contact">Contato<span class="sticker"></span></a></li>
         </ul>
     </nav>
@@ -77,21 +78,18 @@
 
 
 <section id="education">
-    <p class="section__text__p1">Ferramentas</p>
-     <h1 class="title">Conhecimento e Skills</h1>
     <div class="education">
         <div class="educ-content">
+            <p class="section__text__p1">Ferramentas</p>
+            <h1 class="title">Conhecimento e Skills</h1>
             <div class="box-educ1">
                 <span class="date"><ion-icon name="code-slash-outline" class="i" id="color-changing-element-2"></ion-icon></span>
                 <div class="box">
                     <h2>Front-end Ferramentas</h2>
                     <h2 class="sub-educ">Front-end tecnologias</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, labore.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
                     <div class="btn-educ">
                         <a href="" class="btn"><i class="fab fa-bootstrap"></i>Bootstrap</a>
-                    </div>
-                    <div class="btn-educ">
-                        <a href="" class="btn"><i class="fab fa-html5"></i>Html</a>
                     </div>
                     <div class="btn-educ">
                         <a href="" class="btn"><i class="fab fa-css3-alt">css</i></a>
@@ -143,42 +141,56 @@
 
 
 
-<section id="projects">
-<div class="projects">
-    <p class="section__text__p1">Explore</p>
-    <h1 class="title">Meus Projetos</h1>
-    <div class="container-proje">   
-        <img src="./images/sad.jpg" alt="">
-        <div class="container">
-        <h2>Spotfy Profile</h2>
-        <h3>Ouça suas musicas em um ambiente personalizado</h3>
-        <p><span class="proje-title">ola mundo</span>
-            Porjeto desenvolvido em Tailwindcss, React e NodeJs
-        </p>
+
+<section id="project">
+    <p class="section__text__p1" >Ferramentas</p>
+     <h4 class="title">Conhecimento e Skills</h4>
+    <!--filter-->
+    <ul class=project-filter>
+        <li class="list project-filter-active" data-filter="all">All</li>
+        <li class="list"  data-filter="app">Application</li>
+        <li class="list"  data-filter="design">App Design</li>
+        <li class="list"  data-filter="web">Website Design</li>
+        <li class="list"  data-filter="aI">aI</li>
+    </ul>
+   
+    <!--container-->
+    <div class="project-container">
+        <!--box 1 APP-->
+        <a href="" class="project-box app">
+            <img src="./images/OIP.jpeg" alt="work">
+        </a> 
+        <!--box 2 WEB-->
+        <a href="" class="project-box web">
+            <img src="./images/tela.png" alt="work">
+        </a> 
+        <!--box 3 AI-->
+        <a href="" class="project-box aI">
+            <img src="./images/OIP.jpeg" alt="work">
+        </a> 
+         <!--box 4 DESIGN-->
+         <a href="" class="project-box design">
+            <img src="./images/OIP.jpeg" alt="work">
+        </a> 
     </div>
-    <div class="proje-content">
-        <span class="date"><i class="fa fa-eye" id="color-changing-element-2"></i></span>
-    </div>
-</div>
-<div class="btn-educ">
-    <a href="" class="btn"><i class="fab fa-php"></i></a>
-</div>
-<div class="btn-educ">
-    <a href="" class="btn"><i class="fab fa-python"></i></a>
-</div>
-<div class="btn-educ">
-    <a href="" class="btn"><i class="fab fa-python"></i></a>
-</div>
 </section>
 
 
 
 
-<section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-  
-  </section>
+
+
+
+<section class="contact" id="contact">
+    <div class="contact-header">
+        <h1>Lorem, ipsum.</h1>
+    </div>
+</section>
+
+
+
+
+
 
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

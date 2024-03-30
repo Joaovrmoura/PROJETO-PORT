@@ -86,6 +86,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
 /*efeito de luz do mouse da página*/
 document.addEventListener("DOMContentLoaded", function() {
     const light = document.querySelector(".light");
@@ -179,11 +182,41 @@ elementIds.forEach(function(elementId) {
     changeColor(elementId);
 });
 
-// Define um intervalo para chamar a função changeColor() para cada elemento a cada 1 segundo
-elementIds.forEach(function(elementId) {
-    setInterval(function() {
-        changeColor(elementId);
-    }, 500);
+
+
+
+
+
+
+
+
+
+
+
+ // Remove a classe 'project-filter-active' de todos os itens
+document.addEventListener("DOMContentLoaded", function() {
+    const filterItems = document.querySelectorAll('.project-filter li');
+    const projectBoxes = document.querySelectorAll('.project-box');
+
+    filterItems.forEach(item => {
+        item.addEventListener('click', function() {
+           
+            filterItems.forEach(filterItem => {
+                filterItem.classList.remove('project-filter-active');
+            });
+ 
+            this.classList.add('project-filter-active');
+
+            const filterValue = this.getAttribute('data-filter');
+
+            projectBoxes.forEach(box => {
+                const boxFilters = box.classList;
+                if (filterValue === 'all' || boxFilters.contains(filterValue)) {
+                    box.style.display = 'block';
+                } else {
+                    box.style.display = 'none';
+                }
+            });
+        });
+    });
 });
-
-
