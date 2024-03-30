@@ -340,17 +340,19 @@ nav{
 .box-educ1:not(:last-child) {
     margin-bottom: 20px;
 }
-
 @media only screen and (max-width: 1117px) {
+    body, section {
+        overflow-x: hidden; /* Impede que o conteúdo vaze horizontalmente */
+    }
     section {
         width: calc(100% - 110px); /* Ajusta a largura da seção */
         height: auto;
-        margin: 100px 20px 0; /* Ajusta as margens da seção */
+        margin: 100px 20px 0; 
     }
     .header {
         position: relative;
-        margin: 15px auto; 
-        width: 93%; /* Reduz a largura da header */
+        width: 90%;
+        margin: 30px; 
         height: auto; 
         z-index: 1; 
     } 
@@ -371,7 +373,7 @@ nav{
         cursor: pointer;
     }
     #about .about-content {
-        margin-top: -40px; 
+        margin-top: 0px; 
     }
     .box-educ1,
     .box-educ1 .box {
@@ -408,7 +410,6 @@ nav{
         margin-bottom: 15px;
     }
 }
-
 
 @media only screen and (max-width: 768px) {
     section {
@@ -459,7 +460,7 @@ nav{
         width: 90%;
     }
 }
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 310px){
     .header h1 {
         font-size: 35px;
     }
