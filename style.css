@@ -58,6 +58,7 @@ section{
     background-color: var(--white); /* Cor de fundo no tema light */
 }
 
+
 .header {
     margin: -15px 130px;
     height: 100vh;
@@ -65,57 +66,6 @@ section{
     width: 50%;
     overflow: hidden;
 }
-.rotating-text{
-    font-size: 50px;
-    font-weight: 800;
-    color:  var(--color-white);
-}
-
-.rotating-text h1 {
-    display: inline-flex;
-    margin: 0;
-    vertical-align: top;
-}
-
-.rotating-text h1 .word {
-    position: absolute;
-    display: flex;
-    opacity: 0;
-}
-
-.rotating-text h1 .word .letter {
-    transform-origin: center center 25px;
-}
-
-.rotating-text h1 .word .letter.out {
-    transform: rotateX(90deg);
-    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
-}
-
-.rotating-text h1 .word .letter.in {
-    transition: 0.8s ease;    
-}
-
-.rotating-text h1 .word .letter.behind {
-    transform: rotateX(-90deg);
-}
-
-.w-1 {
-    color: pink;
-}
-
-.w-2 {
-    color: rgb(192, 196, 255);
-}
-
-.w-3 {
-    color: rgb(255, 116, 111);
-}
-
-.w-4 {
-    color: rgb(255, 111, 190);
-}
-
 .header h1 {
     font-size: 50px;
     font-weight: 800;
@@ -167,19 +117,6 @@ nav{
     transform: translateX(12%);
 }
 
-.sticker {
-    position: absolute;
-    width: 14px; /* Largura da esfera */
-    height: 14px; /* Altura da esfera */
-    background-color: #ff5050; /* Cor da esfera */
-    top: 50%; /* Posiciona no meio verticalmente */
-    left: -20px; /* Posiciona à direita do texto */
-    transform: translateY(-50%);
-    border-radius: 50%; 
-    transition: transform 0.7s ease-in-out; 
-    opacity: 0; /* Inicia oculto */
-}
-
 .menu a:hover .sticker,
 .menu a.active .sticker {
     opacity: 1; /* Mostra a esfera ao passar o mouse */
@@ -194,10 +131,76 @@ nav{
     color: var(--text-color-p);
     padding: 15px 8px;
     cursor: pointer;
+    transition: all 0.4s ease;
 }
 .menu-icons .i:hover{
     color: rgb(192, 196, 255);
 }
+.sticker {
+    position: absolute;
+    width: 14px; /* Largura da esfera */
+    height: 14px; /* Altura da esfera */
+    background-color: #ff5050; /* Cor da esfera */
+    top: 50%; /* Posiciona no meio verticalmente */
+    left: -20px; /* Posiciona à direita do texto */
+    transform: translateY(-50%);
+    border-radius: 50%; 
+    transition: transform 0.7s ease-in-out; 
+    opacity: 0; /* Inicia oculto */
+}
+
+.rotating-text{
+    font-size: 50px;
+    font-weight: 800;
+    color:  var(--color-white);
+}
+
+.rotating-text h1 {
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+}
+
+.rotating-text h1 .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+}
+
+.rotating-text h1 .word .letter {
+    transform-origin: center center 25px;
+}
+
+.rotating-text h1 .word .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+.rotating-text h1 .word .letter.in {
+    transition: 0.8s ease;    
+}
+
+.rotating-text h1 .word .letter.behind {
+    transform: rotateX(-90deg);
+}
+
+.w-1 {
+    color: pink;
+}
+
+.w-2 {
+    color: rgb(192, 196, 255);
+}
+
+.w-3 {
+    color: rgb(255, 116, 111);
+}
+
+.w-4 {
+    color: rgb(255, 111, 190);
+}
+
+
 
 
 
@@ -338,21 +341,18 @@ nav{
     margin-bottom: 20px;
 }
 
-
 @media only screen and (max-width: 1117px) {
     section {
-        margin-left: 20px;
         width: calc(100% - 110px); /* Ajusta a largura da seção */
         height: auto;
+        margin: 100px 20px 0; /* Ajusta as margens da seção */
     }
     .header {
         position: relative;
-        margin: 50px auto; /* Centraliza a header */
-        display: flex;
-        width: 90%; /* Reduz a largura da header */
-        height: 52vh;
-        overflow: hidden;
-        margin-bottom: -100px;
+        margin: 15px auto; 
+        width: 93%; /* Reduz a largura da header */
+        height: auto; 
+        z-index: 1; 
     } 
     nav {
         display: none;
@@ -364,15 +364,15 @@ nav{
     }
     .sub-header {
         font-size: 20px;
-        margin-top: 100px;
+        margin-top: 70px;
     }
-    .menu-icons {
-        position: absolute;
-        margin-top: 220px;
+  
+    .menu-icons .i:hover{
+        cursor: pointer;
     }
     #about .about-content {
-        width: 100%;
-    } 
+        margin-top: -40px; 
+    }
     .box-educ1,
     .box-educ1 .box {
         width: 100%;
@@ -399,27 +399,28 @@ nav{
         border-radius: 15px;
     }
     .title {
-        font-size: 1.5rem; /* Reduz o tamanho do título */
-        margin-bottom: 15px; /* Adiciona espaço entre o título e o próximo elemento */
+        font-size: 1.5rem;
+        margin-bottom: 15px;
     }
 
     .section__text__p1 {
-        font-size: 18px; /* Ajusta o tamanho do texto */
-        margin-bottom: 15px; /* Adiciona espaço entre o texto e o próximo elemento */
+        font-size: 18px; 
+        margin-bottom: 15px;
     }
 }
 
 
 @media only screen and (max-width: 768px) {
     section {
-        height: auto;
-        margin: 0 auto; /* Centraliza a section */
-        width: 94%; /* Ajusta a largura da seção */
+        width: 100%;
     }
-  
     .header h1 {
         font-size: 50px;
         font-weight: 800;
+    }
+    .sub-header {
+        font-size: 20px;
+        margin-top: 40px;
     }
     .box-educ1:hover {
         background: none;
@@ -429,7 +430,7 @@ nav{
     }
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 400px) {
     .title {
         font-size: 1.70rem;
         margin-bottom: 1px;
@@ -438,7 +439,11 @@ nav{
         margin-top: 15px;
     }
     .header h1 {
+        margin-top: 50px;
         font-size: 40px;
+    }
+    .sub-header {
+        margin-top: 50px;
     }
     .sub-header p {
         font-size: 18px;
@@ -448,27 +453,32 @@ nav{
         font-size: 14px;
         width: 250px;
     }
-    .menu-icons {
-        margin-top: 200px;
+
+    #about .about-content {
+        margin-top: -50px;
+        width: 90%;
     }
 }
-@media only screen and (max-width: 330px){
-    .header{
-       width: 230px;
-    }
+@media only screen and (max-width: 300px){
     .header h1 {
-        font-size: 30px;
+        font-size: 35px;
+    }
+    .header{
+        width: 100%;
+        margin-left: 10px;
     }
     .sub-header p {
         font-size: 14px;
     }
     .sub-header .sub {
         font-size: 12px;
-        width: 180px;
+    
     }
-    .menu-icons {
-        margin-top: 180px;
-    }
+}
+@media only screen and (max-width: 280px){
+    .header h1{
+        font-size: 14vw;
+    } 
 }
 
 
