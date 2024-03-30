@@ -347,7 +347,7 @@ nav{
     section {
         width: calc(100% - 110px); /* Ajusta a largura da seção */
         height: auto;
-        margin: 100px 20px 0; 
+        margin: 30px ; 
     }
     .header {
         position: relative;
@@ -454,9 +454,10 @@ nav{
         font-size: 14px;
         width: 250px;
     }
-
+    .menu-icons .i{
+        margin-top: -30px;
+    }
     #about .about-content {
-        margin-top: -50px;
         width: 90%;
     }
 }
